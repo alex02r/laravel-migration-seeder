@@ -24,6 +24,7 @@ return new class extends Migration
             $table->tinyInteger('carriages');
             $table->boolean('late');
             $table->boolean('deleted');
+            $table->timestamps();
         });
     }
 
