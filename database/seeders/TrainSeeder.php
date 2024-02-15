@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents; 
 use Illuminate\Database\Seeder;
 use App\Models\Train;
 use Faker\Generator as Faker;
@@ -28,6 +28,8 @@ class TrainSeeder extends Seeder
             $new_train->carriages = $faker->randomNumber(2, false);
             $new_train->late = $faker->boolean();
             $new_train->deleted = $faker->boolean();
+
+            $new_train->save();
         }
     }
 }
