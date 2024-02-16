@@ -22,8 +22,8 @@ class TrainSeeder extends Seeder
             $new_train->company = $faker->company();
             $new_train->start_station = $faker->city();
             $new_train->destination = $faker->city();
-            $new_train->start_time = $faker->time('H:i');
-            $new_train->end_time = $faker->time('H:i');
+            $new_train->start_time = $faker->dateTimeBetween('-2 days', '+2 days');
+            $new_train->end_time = $faker->dateTimeBetween('+2 days', '+4 days');
             $new_train->code = $faker->randomNumber(5, true);
             $new_train->carriages = $faker->randomNumber(2, false);
             $new_train->late = $faker->boolean();

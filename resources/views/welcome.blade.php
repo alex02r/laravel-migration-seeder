@@ -47,7 +47,7 @@
                                     <td>{{ $train['end_time'] }}</td>
                                     <td>{{ $train['code'] }}</td>
                                     <td>{{ $train['carriages'] }}</td>
-                                    <td>{{ $train['late'] ? 'si' : ''}}</td>
+                                    <td>{{ !$train['late'] ? 'si' : ''}}</td>
                                     <td>{{ $train['deleted'] ? 'si' : ''}}</td>
                                 </tr>
                             @endforeach
