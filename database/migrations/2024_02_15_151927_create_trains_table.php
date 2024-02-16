@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('company', 80);
             $table->string('start_station', 80);
             $table->string('destination', 80);
-            $table->time('start_time');
-            $table->time('end_time');
+            $table->dateTime('start_time');
+            $table->dateTime('end_time');
             $table->string('code', 5);
             $table->tinyInteger('carriages');
             $table->boolean('late');
